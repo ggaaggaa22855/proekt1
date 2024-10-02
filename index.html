@@ -1,10 +1,29 @@
 <html>
 <head>
-Параметры страницы
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rainbow Text</title>
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<style>
+.rainbow-text {
+	font-family: ABeeZee, sans-serif;
+	text-align: center;
+	font-size: 89px;
+	letter-spacing: 34px;
+	text-shadow: #A3A3A3 19px 20px 11px;
+	-webkit-text-stroke-width: 1.8px;
+	-webkit-text-fill-color: transparent;
+}
+.rainbow-text .block-line > span {
+	display: inline-block;
+}
+
+</style>
 </head>
 <body>
-Текст страницы
-
+<div class="rainbow-text">
+	<span class="block-line"><span><span style="color:#ff0000">К</span><span style="color:#cc0000">у</span><span style="color:#990000">р</span><span style="color:#660000">с</span><span style="color:#330000">о</span><span style="color:#000000">в</span><span style="color:#003300">а</span><span style="color:#006600">я&nbsp;</span></span><span><span style="color:#009900">р</span><span style="color:#00cc00">а</span><span style="color:#00ff00">б</span><span style="color:#00cc00">о</span><span style="color:#009900">т</span><span style="color:#006600">а&nbsp;</span></span><span><span style="color:#003300">Б</span><span style="color:#000000">е</span><span style="color:#330000">л</span><span style="color:#660000">ь</span><span style="color:#990000">с</span><span style="color:#cc0000">к</span><span style="color:#990000">о</span><span style="color:#660000">г</span><span style="color:#330000">о&nbsp;</span></span><span><span style="color:#000000">Д</span><span style="color:#003300">а</span><span style="color:#006600">н</span><span style="color:#009900">и</span><span style="color:#00cc00">л</span><span style="color:#00ff00">ы</span></span></span>
+</div>
 <pre>
 Эта таблица создана при помощи знака табуляции
 Фамилия Имя Отчество Год рождения
@@ -66,29 +85,32 @@
 	</tbody>
 </table>
 <form>
-<button title=’Просмотр версии обозревателя’ accesskey=’Е’>Версия</button>
+<button title="Просмотр версии обозревателя" accesskey=’Е’>Версия</button>
 <br>
-<-- Поле ввода -->
-<input type=’text’ size=40><br><br>
-<-- Кнопки подачи запроса и сброса -->
-<input type=’submit’ DISABLED>
-<input type=’reset’>
+<input type="text" size=40><br><br>
+<input type="submit" DISABLED>
+<input type="reset">
 </form>	
-<form name=’panel instrumentov’>
-<table cellpadding=’0’ celspacing=’0’>
-<!-- Создаем панель инструментов -->
+<form name="panel instrumentov">
+<table cellpadding="0"celspacing="0">
 <tr><td>
-<button title=’Создать файл’><img src=’new.gif’ width=’300%’></button><br>
+<button title="Создать файл"></button><br>
 </td><td>
-<button title=’Открыть’><img src=’open.gif’ width=’300%’></button><br>
+<button title="Открыть"></button><br>
 </td><td>
-<button title=’Сохранить’><img src=’save.gif’ width=’300%’></button><br>
+<button title="Сохранить"></button><br>
 </td><td>
-<button title=’Печать’><img src=’print.gif’ width=’300%’></button><br>
+<button title="Печать"></button><br>
 </td>
 </tr>
 </table>
 </form>
-
+<Form name="text">
+<p>Оставьте свое сообщение в следующем окне и нажмите на кнопке для его 
+отправления</p>
+<textarea name="koment" rows="15" cols="30" wrap="off">Введите ваше сообщение сдесь</textarea><br>
+<p><input type="submit"></p>
+<p><input type="reset"></p>
 </body>
 </html>
+
